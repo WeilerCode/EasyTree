@@ -1,0 +1,19 @@
+{
+    "name": "weiler/easy-tree",
+    "description": "menu tree",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weiler",
+            "email": "weiler.china@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weiler\\EasyTree\\": "src/"
+        }
+    }
+}
