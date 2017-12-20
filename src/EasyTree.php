@@ -64,9 +64,9 @@ class EasyTree
      */
     public function getChild($parentValue)
     {
-        $child = array_where($this->menu, function($key, $value) use($parentValue)
+        $child = array_where($this->menu, function($v, $k) use($parentValue)
         {
-            return $value->{$this->parentStr} == $parentValue;
+            return $v[$this->parentStr] == $parentValue;
         });
         return $child ? $child : false;
     }
