@@ -130,7 +130,7 @@ class EasyTree
                 $spacer = $delimiterLeft ? $delimiterLeft.$j : '';
 
                 eval("\$this->tree .= \"$this->template\";");
-                $this->createTree($v->id, $delimiterLeft.$k.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+                $this->createTree($v['id'], $delimiterLeft.$k.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
                 $n++;
             }
         }
